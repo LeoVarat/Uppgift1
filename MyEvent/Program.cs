@@ -10,4 +10,8 @@ Console.WriteLine("\n");
 
 logic.SearchLogic.GetUser(searchValue);
 
+Console.WriteLine("\n");
+
+logic.SearchLogic.GetUsers();
+
 Console.WriteLine("Allting funkar");
