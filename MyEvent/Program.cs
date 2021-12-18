@@ -18,6 +18,14 @@ Console.WriteLine("\n");
 
 logic.DeleteLogic.DeleteUser(1);
 
+Console.WriteLine("\n");
+
+Console.WriteLine("Ange sök väg för dokumentet om du vill annars tryck bara enter: ");
+
+var path = Console.ReadLine();
+
+logic.ExportLogic.ExportUsers(path);
+
 
 
 Console.WriteLine("Allting funkar");

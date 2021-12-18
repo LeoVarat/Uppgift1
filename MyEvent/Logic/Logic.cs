@@ -14,6 +14,7 @@ namespace MyEvent.Logic
             Db = new DummyDatabase();
             SearchLogic = new SearchLogic(Db);
             DeleteLogic = new DeleteLogic(Db); 
+            ExportLogic = new ExportLogic(Db);
         }
 
         private DummyDatabase Db { get; set; }
@@ -21,5 +22,7 @@ namespace MyEvent.Logic
         public SearchLogic SearchLogic { get; set; }
 
         public DeleteLogic DeleteLogic { get; set; }
+
+        public ExportLogic ExportLogic { get; set; }
     }
 }
