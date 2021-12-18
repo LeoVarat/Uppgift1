@@ -14,4 +14,10 @@ Console.WriteLine("\n");
 
 logic.SearchLogic.GetUsers();
 
+Console.WriteLine("\n");
+
+logic.DeleteLogic.DeleteUser(1);
+
+
+
 Console.WriteLine("Allting funkar");
