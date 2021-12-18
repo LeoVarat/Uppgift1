@@ -13,9 +13,13 @@ namespace MyEvent.Logic
         {
             Db = new DummyDatabase();
             SearchLogic = new SearchLogic(Db);
+            DeleteLogic = new DeleteLogic(Db); 
         }
 
         private DummyDatabase Db { get; set; }
+
         public SearchLogic SearchLogic { get; set; }
+
+        public DeleteLogic DeleteLogic { get; set; }
     }
 }
