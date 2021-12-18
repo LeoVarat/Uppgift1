@@ -33,6 +33,21 @@ namespace MyEvent.Logic
                     );
             }
         }
- 
+        
+    public void GetUsers()
+        {
+            Console.WriteLine("Lista på alla deltagare:");
+            foreach (var user in db.ListOfUsers)
+            {
+                Console.WriteLine(
+                    user.Id + "\n" +
+                    user.FirstName + "\n" +
+                    user.LastName + "\n" +  
+                    user.Email + "\n" +
+                    user.Requests + "\n"
+                    );
+            }
+        }
+
     }
 }
