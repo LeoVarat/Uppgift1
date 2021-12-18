@@ -15,8 +15,15 @@ namespace MyEvent.Logic
             db = database;
         }
 
-        public void DeleteUser (int id)
+        public void DeleteUser (string? userId)
         {
+            var parseSuccess = int.TryParse(userId, out int id);
+            if (parseSuccess == false)
+            {
+                Console.WriteLine("Du har inte angivit ett korrekt Id");
+                return;
+            }
+
             var result = db.ListOfUsers.Find(user => user.Id == id);
             
             if(result != null)
